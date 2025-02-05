@@ -22,9 +22,9 @@ import java.util.List;
 public class NaverApiService {
 
 	private final RestTemplate restTemplate;
-	@Value("${naver.client_id}")
+	@Value("${naver.api.client_id}")
 	private String clientId;
-	@Value("${naver.client_secret}")
+	@Value("${naver.api.client_secret}")
 	private String clientSecret;
 
 	public NaverApiService(RestTemplateBuilder builder) {
